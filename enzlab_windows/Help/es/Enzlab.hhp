@@ -1,0 +1,63 @@
+[OPTIONS]
+Compatibility=1.1 or later
+Compiled file=Enzlab_es.chm
+Contents file=EnzLab.hhc
+Default topic=bgrn0001.htm
+Display compile progress=Yes
+Language=0x809 English (United Kingdom)
+
+
+[FILES]
+cont0001.htm
+cont0002.htm
+cont0003.htm
+cont0004.htm
+cont0005.htm
+bgrn0001.htm
+bgrn0002.htm
+bgrn0003.htm
+bgrn0004.htm
+bgrn0005.htm
+bgrn0006.htm
+dlg0001.htm
+dlg0002.htm
+dlg0003.htm
+dlg0004.htm
+dlg0005.htm
+dlg0006.htm
+dlg0007.htm
+dlg0008.htm
+dlg0009.htm
+dlg000a.htm
+dlg000b.htm
+dlg000c.htm
+dlg000d.htm
+dlg000e.htm
+howt0001.htm
+howt0002.htm
+howt0003.htm
+howt0004.htm
+howt0005.htm
+howt0006.htm
+howt0007.htm
+howt0008.htm
+howt0009.htm
+howt000a.htm
+howt000b.htm
+howt000c.htm
+howt000d.htm
+howt000e.htm
+howt000f.htm
+howt000g.htm
+howt000h.htm
+howt000i.htm
+what0001.htm
+what0002.htm
+what0003.htm
+what0004.htm
+what0005.htm
+what0006.htm
+About.html
+
+[INFOTYPES]
+

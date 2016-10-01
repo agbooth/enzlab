@@ -4,3 +4,6 @@ xcuserdata
 *.xccheckout
 *.sdf
 *.suo
+*.opensdf
+Debug
+Release
