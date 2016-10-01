@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "806B409FA3561B840ABB36BF27C3B00F53FB8203",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "2130284496E7E3DD1358E120FE6345940B36D6E9" : 9223372036854775807,
+    "806B409FA3561B840ABB36BF27C3B00F53FB8203" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "38BFE93F-0664-4C5F-B6AF-0140E8F9C1B7",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "2130284496E7E3DD1358E120FE6345940B36D6E9" : "",
+    "806B409FA3561B840ABB36BF27C3B00F53FB8203" : "enzlab_mac\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "EnzLab",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "EnzLab\/EnzLab.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "github.com:agbooth\/enzlab.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "2130284496E7E3DD1358E120FE6345940B36D6E9"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "ivy.agbooth.com:\/home\/git\/enzlab_mac.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "806B409FA3561B840ABB36BF27C3B00F53FB8203"
+    }
+  ]
+}

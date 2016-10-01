@@ -1,0 +1,6 @@
+*~
+.DS_store
+xcuserdata
+*.xccheckout
+*.sdf
+*.suo

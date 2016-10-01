@@ -1,0 +1,490 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="11201" systemVersion="16A323" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none">
+    <dependencies>
+        <deployment identifier="macosx"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="11201"/>
+        <capability name="box content view" minToolsVersion="7.0"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner" customClass="NSApplication">
+            <connections>
+                <outlet property="delegate" destination="Voe-Tx-rLC" id="GzC-gU-4Uq"/>
+            </connections>
+        </customObject>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <customObject id="Voe-Tx-rLC" customClass="el_AppDelegate">
+            <connections>
+                <outlet property="Clock_Label" destination="z5n-Xa-cXj" id="JFL-Wr-jkm"/>
+                <outlet property="Go_button" destination="w8d-Yh-QSV" id="QKd-6L-Nsg"/>
+                <outlet property="Inhibitor_box" destination="d8X-Le-Xdn" id="YtC-7M-RAe"/>
+                <outlet property="Rate_label" destination="dyN-RP-OHN" id="Wi4-b2-F14"/>
+                <outlet property="Repeat_button" destination="oH2-Vy-J70" id="zxg-N1-3JN"/>
+                <outlet property="Run_label" destination="YKb-aW-k7h" id="0wv-wA-5iz"/>
+                <outlet property="Substrate_box" destination="Qd1-PV-BVx" id="Sgy-9g-vnb"/>
+                <outlet property="Vol_box" destination="qqj-iz-v2P" id="HVI-q4-6NZ"/>
+                <outlet property="Vol_remaining_label" destination="NUS-2M-ySb" id="PjF-4W-99k"/>
+                <outlet property="clockBox" destination="CTl-Jy-fey" id="9ZS-nV-YR1"/>
+                <outlet property="graphView" destination="P5U-2X-fif" id="taX-UQ-uxM"/>
+                <outlet property="itemAbout" destination="5kV-Vb-QxS" id="EKm-zg-91C"/>
+                <outlet property="itemContents" destination="FKE-Sm-Kum" id="5I6-eX-Y3h"/>
+                <outlet property="itemCopy" destination="kAO-e6-Oag" id="pRe-rb-TWO"/>
+                <outlet property="itemGoHome" destination="snW-S8-Cw5" id="ymj-F5-C5c"/>
+                <outlet property="itemHowWorks" destination="Cxd-rW-iYz" id="IJ6-L6-ksc"/>
+                <outlet property="itemInformation" destination="2k3-Jz-TRy" id="KGv-0m-vyO"/>
+                <outlet property="itemKinetics" destination="uFc-id-3q4" id="zJ4-i6-vaD"/>
+                <outlet property="itemListExperimental" destination="Gi5-1S-RQB" id="BO0-oc-CTU"/>
+                <outlet property="itemListKinetic" destination="Fal-I4-PZk" id="k8S-8s-ikz"/>
+                <outlet property="itemLoad" destination="IAo-SY-fd9" id="Vt7-9J-h2Q"/>
+                <outlet property="itemMoreFrom" destination="S6m-CY-BT3" id="Len-DW-Rp5"/>
+                <outlet property="itemPHProfile" destination="V5B-bo-KGb" id="QcO-xl-C8a"/>
+                <outlet property="itemPrecision" destination="rTh-jd-fyq" id="UJH-7c-Wlp"/>
+                <outlet property="itemQuit" destination="4sb-4s-VLi" id="DfI-JW-YkP"/>
+                <outlet property="itemRestart" destination="tXI-mr-wws" id="Cnu-Xh-pVJ"/>
+                <outlet property="itemSave" destination="pxx-59-PXV" id="oF3-Kh-1Ys"/>
+                <outlet property="itemSelect" destination="gCA-mn-Xi0" id="9c2-Lf-lzU"/>
+                <outlet property="itemWhatNext" destination="N21-9w-2RW" id="6ZD-QZ-udt"/>
+                <outlet property="pH_box" destination="h7t-fL-Tnc" id="V4r-En-sta"/>
+                <outlet property="window" destination="QvC-M9-y7g" id="gIp-Ho-8D9"/>
+            </connections>
+        </customObject>
+        <customObject id="YLy-65-1bz" customClass="NSFontManager"/>
+        <menu title="Main Menu" systemMenu="main" id="AYu-sK-qS6">
+            <items>
+                <menuItem title="EnzLab" id="1Xt-HY-uBw">
+                    <modifierMask key="keyEquivalentModifierMask"/>
+                    <menu key="submenu" title="EnzLab" systemMenu="apple" id="uQy-DD-JDr">
+                        <items>
+                            <menuItem title="About EnzLab" id="5kV-Vb-QxS">
+                                <modifierMask key="keyEquivalentModifierMask"/>
+                                <connections>
+                                    <action selector="dispatch:" target="Voe-Tx-rLC" id="Dsl-7Y-NfK"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem isSeparatorItem="YES" id="VOq-y0-SEH"/>
+                            <menuItem title="Hide EnzLab" keyEquivalent="h" id="Olw-nP-bQN">
+                                <connections>
+                                    <action selector="hide:" target="-1" id="PnN-Uc-m68"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="Hide Others" keyEquivalent="h" id="Vdr-fp-XzO">
+                                <modifierMask key="keyEquivalentModifierMask" option="YES" command="YES"/>
+                                <connections>
+                                    <action selector="hideOtherApplications:" target="-1" id="VT4-aY-XCT"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="Show All" id="Kd2-mp-pUS">
+                                <modifierMask key="keyEquivalentModifierMask"/>
+                                <connections>
+                                    <action selector="unhideAllApplications:" target="-1" id="Dhg-Le-xox"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem isSeparatorItem="YES" id="kCx-OE-vgT"/>
+                            <menuItem title="Quit EnzLab" keyEquivalent="q" id="4sb-4s-VLi">
+                                <connections>
+                                    <action selector="dispatch:" target="Voe-Tx-rLC" id="Fnx-tP-csH"/>
+                                </connections>
+                            </menuItem>
+                        </items>
+                        <connections>
+                            <outlet property="delegate" destination="Voe-Tx-rLC" id="Glz-KU-iTc"/>
+                        </connections>
+                    </menu>
+                </menuItem>
+                <menuItem title="File" id="dMs-cI-mzQ">
+                    <modifierMask key="keyEquivalentModifierMask"/>
+                    <menu key="submenu" title="File" autoenablesItems="NO" id="bib-Uj-vzu">
+                        <items>
+                            <menuItem title="Save…" enabled="NO" keyEquivalent="s" id="pxx-59-PXV">
+                                <connections>
+                                    <action selector="dispatch:" target="Voe-Tx-rLC" id="SZ5-qa-XUk"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="Load…" keyEquivalent="o" id="IAo-SY-fd9">
+                                <connections>
+                                    <action selector="dispatch:" target="Voe-Tx-rLC" id="wLR-Lj-TAd"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem isSeparatorItem="YES" id="m54-Is-iLE"/>
+                            <menuItem title="Restart" id="tXI-mr-wws">
+                                <modifierMask key="keyEquivalentModifierMask"/>
+                                <connections>
+                                    <action selector="dispatch:" target="Voe-Tx-rLC" id="nQz-rq-La0"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem isSeparatorItem="YES" id="wpv-xv-7a8"/>
+                            <menuItem title="Page Setup…" keyEquivalent="P" id="qIS-W8-SiK">
+                                <modifierMask key="keyEquivalentModifierMask" shift="YES" command="YES"/>
+                                <connections>
+                                    <action selector="runPageLayout:" target="-1" id="euX-FE-fWW"/>
+                                </connections>
+                            </menuItem>
+                        </items>
+                        <connections>
+                            <outlet property="delegate" destination="Voe-Tx-rLC" id="WVG-nk-lpV"/>
+                        </connections>
+                    </menu>
+                </menuItem>
+                <menuItem title="Enzyme" id="bb7-iE-YrL">
+                    <modifierMask key="keyEquivalentModifierMask"/>
+                    <menu key="submenu" title="Enzyme" autoenablesItems="NO" id="rNd-7c-CKs">
+                        <items>
+                            <menuItem title="Information..." enabled="NO" id="2k3-Jz-TRy">
+                                <modifierMask key="keyEquivalentModifierMask"/>
+                                <connections>
+                                    <action selector="dispatch:" target="Voe-Tx-rLC" id="vjI-d3-7co"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="Select..." id="gCA-mn-Xi0">
+                                <modifierMask key="keyEquivalentModifierMask"/>
+                                <connections>
+                                    <action selector="dispatch:" target="Voe-Tx-rLC" id="OhJ-dC-f6y"/>
+                                </connections>
+                            </menuItem>
+                        </items>
+                        <connections>
+                            <outlet property="delegate" destination="Voe-Tx-rLC" id="nC3-f0-FOY"/>
+                        </connections>
+                    </menu>
+                </menuItem>
+                <menuItem title="Results" id="jxT-CU-nIS">
+                    <modifierMask key="keyEquivalentModifierMask"/>
+                    <menu key="submenu" title="Results" autoenablesItems="NO" id="GEO-Iw-cKr">
+                        <items>
+                            <menuItem title="List experimental results..." enabled="NO" id="Gi5-1S-RQB">
+                                <modifierMask key="keyEquivalentModifierMask"/>
+                                <connections>
+                                    <action selector="dispatch:" target="Voe-Tx-rLC" id="pYV-Pi-q7V"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="List kinetic analyses..." enabled="NO" id="Fal-I4-PZk">
+                                <modifierMask key="keyEquivalentModifierMask"/>
+                                <connections>
+                                    <action selector="dispatch:" target="Voe-Tx-rLC" id="zNF-wU-gOf"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="Copy experimental results to clipboard" enabled="NO" id="kAO-e6-Oag">
+                                <modifierMask key="keyEquivalentModifierMask"/>
+                                <connections>
+                                    <action selector="dispatch:" target="Voe-Tx-rLC" id="geS-gf-zDQ"/>
+                                </connections>
+                            </menuItem>
+                        </items>
+                        <connections>
+                            <outlet property="delegate" destination="Voe-Tx-rLC" id="Pxg-92-yvw"/>
+                        </connections>
+                    </menu>
+                </menuItem>
+                <menuItem title="Analysis" id="HkI-mt-CUv">
+                    <modifierMask key="keyEquivalentModifierMask"/>
+                    <menu key="submenu" title="Analysis" autoenablesItems="NO" id="vTq-P4-zvF">
+                        <items>
+                            <menuItem title="Precision..." enabled="NO" id="rTh-jd-fyq">
+                                <modifierMask key="keyEquivalentModifierMask"/>
+                                <connections>
+                                    <action selector="dispatch:" target="Voe-Tx-rLC" id="igX-qK-ajg"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="Kinetics..." enabled="NO" id="uFc-id-3q4">
+                                <modifierMask key="keyEquivalentModifierMask"/>
+                                <connections>
+                                    <action selector="dispatch:" target="Voe-Tx-rLC" id="Bdr-Mt-TvW"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="pH Profile..." enabled="NO" id="V5B-bo-KGb">
+                                <modifierMask key="keyEquivalentModifierMask"/>
+                                <connections>
+                                    <action selector="dispatch:" target="Voe-Tx-rLC" id="PD3-OZ-PrI"/>
+                                </connections>
+                            </menuItem>
+                        </items>
+                        <connections>
+                            <outlet property="delegate" destination="Voe-Tx-rLC" id="CEE-4I-V0g"/>
+                        </connections>
+                    </menu>
+                </menuItem>
+                <menuItem title="Go Home" id="H8h-7b-M4v">
+                    <modifierMask key="keyEquivalentModifierMask"/>
+                    <menu key="submenu" title="Go Home" autoenablesItems="NO" id="HyV-fh-RgO">
+                        <items>
+                            <menuItem title="Go Home" keyEquivalent="g" id="snW-S8-Cw5">
+                                <connections>
+                                    <action selector="dispatch:" target="Voe-Tx-rLC" id="vGT-rD-eMI"/>
+                                </connections>
+                            </menuItem>
+                        </items>
+                        <connections>
+                            <outlet property="delegate" destination="Voe-Tx-rLC" id="6q1-Ut-O7k"/>
+                        </connections>
+                    </menu>
+                </menuItem>
+                <menuItem title="Help" id="wpr-3q-Mcd">
+                    <modifierMask key="keyEquivalentModifierMask"/>
+                    <menu key="submenu" title="Help" systemMenu="help" autoenablesItems="NO" id="F2S-fz-NVQ">
+                        <items>
+                            <menuItem title="EnzLab Help" keyEquivalent="" id="FKE-Sm-Kum">
+                                <modifierMask key="keyEquivalentModifierMask"/>
+                                <connections>
+                                    <action selector="showHelp:" target="-1" id="rag-h7-LZ2"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="How the program works" keyEquivalent="" id="Cxd-rW-iYz">
+                                <modifierMask key="keyEquivalentModifierMask"/>
+                                <connections>
+                                    <action selector="dispatch:" target="Voe-Tx-rLC" id="9XE-IG-gRB"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="What to do next" keyEquivalent="" id="N21-9w-2RW">
+                                <modifierMask key="keyEquivalentModifierMask"/>
+                                <connections>
+                                    <action selector="dispatch:" target="Voe-Tx-rLC" id="7q7-4E-NOq"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem isSeparatorItem="YES" id="xrc-XQ-5RN"/>
+                            <menuItem title="More from agbooth.com..." id="S6m-CY-BT3">
+                                <modifierMask key="keyEquivalentModifierMask"/>
+                                <connections>
+                                    <action selector="dispatch:" target="Voe-Tx-rLC" id="mUr-NS-OLm"/>
+                                </connections>
+                            </menuItem>
+                        </items>
+                        <connections>
+                            <outlet property="delegate" destination="Voe-Tx-rLC" id="aaH-Oh-7vS"/>
+                        </connections>
+                    </menu>
+                </menuItem>
+            </items>
+            <connections>
+                <outlet property="delegate" destination="-2" id="IsN-x9-b35"/>
+            </connections>
+        </menu>
+        <window title="EnzLab" allowsToolTipsWhenApplicationIsInactive="NO" releasedWhenClosed="NO" visibleAtLaunch="NO" animationBehavior="default" id="QvC-M9-y7g">
+            <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" resizable="YES"/>
+            <rect key="contentRect" x="335" y="390" width="1024" height="768"/>
+            <rect key="screenRect" x="0.0" y="0.0" width="1920" height="1058"/>
+            <view key="contentView" wantsLayer="YES" canDrawConcurrently="YES" appearanceType="aqua" id="EiT-Mj-1SZ">
+                <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <box wantsLayer="YES" appearanceType="aqua" boxType="oldStyle" borderType="line" titlePosition="noTitle" id="anC-Zg-YZi">
+                        <rect key="frame" x="0.0" y="696" width="225" height="72"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                        <view key="contentView" id="6en-mg-4bS">
+                            <rect key="frame" x="1" y="1" width="223" height="70"/>
+                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            <subviews>
+                                <textField verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" setsMaxLayoutWidthAtFirstLayout="YES" id="NUS-2M-ySb">
+                                    <rect key="frame" x="40" y="9" width="143" height="53"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                    <textFieldCell key="cell" controlSize="mini" sendsActionOnEndEditing="YES" alignment="center" id="zhf-x2-jHD">
+                                        <font key="font" metaFont="system"/>
+                                        <string key="title">Enzyme
+Solution Remaining:
+[none]</string>
+                                        <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                    </textFieldCell>
+                                </textField>
+                            </subviews>
+                        </view>
+                    </box>
+                    <box autoresizesSubviews="NO" wantsLayer="YES" appearanceType="aqua" boxType="oldStyle" borderType="line" title="Box" titlePosition="noTitle" id="CTl-Jy-fey">
+                        <rect key="frame" x="854" y="696" width="170" height="72"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                        <view key="contentView" id="d2a-gP-TOg">
+                            <rect key="frame" x="1" y="1" width="168" height="70"/>
+                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            <subviews>
+                                <textField verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" setsMaxLayoutWidthAtFirstLayout="YES" id="z5n-Xa-cXj">
+                                    <rect key="frame" x="9" y="8" width="151" height="54"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                    <textFieldCell key="cell" controlSize="mini" sendsActionOnEndEditing="YES" alignment="center" id="ifv-tz-2Ui">
+                                        <font key="font" metaFont="system"/>
+                                        <string key="title">Simulation time:
+9:00
+[not started]</string>
+                                        <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                    </textFieldCell>
+                                </textField>
+                            </subviews>
+                        </view>
+                    </box>
+                    <box appearanceType="aqua" verticalHuggingPriority="750" boxType="separator" id="AW7-2R-lPF">
+                        <rect key="frame" x="-5001" y="694" width="10000" height="5"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMinY="YES"/>
+                    </box>
+                    <box appearanceType="aqua" verticalHuggingPriority="750" boxType="separator" id="87c-Ex-su5">
+                        <rect key="frame" x="-5001" y="765" width="10000" height="5"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMinY="YES"/>
+                    </box>
+                    <textField verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" setsMaxLayoutWidthAtFirstLayout="YES" id="olD-n9-K9B">
+                        <rect key="frame" x="243" y="705" width="277" height="54"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                        <textFieldCell key="cell" controlSize="mini" sendsActionOnEndEditing="YES" id="g4j-Um-Auq">
+                            <font key="font" metaFont="system"/>
+                            <string key="title">		F1 - Help Contents
+Press:	F2 - How the program works
+		F3 - What to do next</string>
+                            <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                    </textField>
+                    <box appearanceType="aqua" boxType="oldStyle" borderType="line" title="Box" titlePosition="noTitle" id="E6H-Hd-woq">
+                        <rect key="frame" x="0.0" y="0.0" width="225" height="697"/>
+                        <autoresizingMask key="autoresizingMask" heightSizable="YES"/>
+                        <view key="contentView" id="M3e-0D-Mdq">
+                            <rect key="frame" x="1" y="1" width="223" height="695"/>
+                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            <subviews>
+                                <button verticalHuggingPriority="750" id="oH2-Vy-J70">
+                                    <rect key="frame" x="29" y="44" width="83" height="32"/>
+                                    <buttonCell key="cell" type="push" title="Repeat" bezelStyle="rounded" alignment="center" enabled="NO" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="pKq-iH-78V">
+                                        <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                        <font key="font" metaFont="system"/>
+                                    </buttonCell>
+                                </button>
+                                <button verticalHuggingPriority="750" id="w8d-Yh-QSV">
+                                    <rect key="frame" x="112" y="44" width="82" height="32"/>
+                                    <buttonCell key="cell" type="push" title="Go" bezelStyle="rounded" alignment="center" enabled="NO" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="IMb-Af-ETR">
+                                        <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                        <font key="font" metaFont="system"/>
+                                    </buttonCell>
+                                </button>
+                                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" id="YKb-aW-k7h">
+                                    <rect key="frame" x="13" y="637" width="197" height="17"/>
+                                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="center" title="Run no. 1" id="k1C-tM-H7C">
+                                        <font key="font" metaFont="system"/>
+                                        <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                    </textFieldCell>
+                                </textField>
+                                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" id="dyN-RP-OHN">
+                                    <rect key="frame" x="13" y="114" width="197" height="25"/>
+                                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="center" title="Vₒ = 12.6 µmol/min" id="L91-G6-iyK">
+                                        <font key="font" metaFont="system"/>
+                                        <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                    </textFieldCell>
+                                </textField>
+                                <textField verticalHuggingPriority="750" id="qqj-iz-v2P">
+                                    <rect key="frame" x="60" y="557" width="96" height="22"/>
+                                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" alignment="right" drawsBackground="YES" id="s80-p2-6wM">
+                                        <font key="font" metaFont="system"/>
+                                        <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                        <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                    </textFieldCell>
+                                    <connections>
+                                        <outlet property="formatter" destination="Xqc-DD-atL" id="4AM-eu-nZO"/>
+                                    </connections>
+                                </textField>
+                                <textField verticalHuggingPriority="750" id="h7t-fL-Tnc">
+                                    <rect key="frame" x="60" y="441" width="96" height="22"/>
+                                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" alignment="right" drawsBackground="YES" id="SVp-B7-ELR">
+                                        <font key="font" metaFont="system"/>
+                                        <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                        <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                    </textFieldCell>
+                                    <connections>
+                                        <outlet property="formatter" destination="zRx-nt-sgV" id="L0a-PM-o6P"/>
+                                    </connections>
+                                </textField>
+                                <textField verticalHuggingPriority="750" id="Qd1-PV-BVx">
+                                    <rect key="frame" x="60" y="319" width="96" height="22"/>
+                                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" alignment="right" drawsBackground="YES" id="7Qr-YR-eOw">
+                                        <font key="font" metaFont="system"/>
+                                        <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                        <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                    </textFieldCell>
+                                    <connections>
+                                        <outlet property="formatter" destination="RlJ-eL-3t7" id="xhx-kW-R8u"/>
+                                    </connections>
+                                </textField>
+                                <textField verticalHuggingPriority="750" id="d8X-Le-Xdn">
+                                    <rect key="frame" x="60" y="197" width="96" height="22"/>
+                                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" alignment="right" drawsBackground="YES" id="tS3-7g-gSb">
+                                        <font key="font" metaFont="system"/>
+                                        <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                        <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                    </textFieldCell>
+                                    <connections>
+                                        <outlet property="formatter" destination="RlJ-eL-3t7" id="gvg-H2-0Et"/>
+                                    </connections>
+                                </textField>
+                                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" id="Hrk-cf-r0o">
+                                    <rect key="frame" x="162" y="560" width="38" height="17"/>
+                                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="µL" id="6OU-os-yED">
+                                        <font key="font" metaFont="system"/>
+                                        <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                    </textFieldCell>
+                                </textField>
+                                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" id="0jK-65-h2c">
+                                    <rect key="frame" x="22" y="559" width="38" height="17"/>
+                                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="center" title="Vol:" id="dss-Y9-jhH">
+                                        <font key="font" metaFont="system"/>
+                                        <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                    </textFieldCell>
+                                </textField>
+                                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" id="4mJ-Cv-nFb">
+                                    <rect key="frame" x="22" y="443" width="38" height="17"/>
+                                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="center" title="pH:" id="hHN-0G-UR3">
+                                        <font key="font" metaFont="system"/>
+                                        <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                    </textFieldCell>
+                                </textField>
+                                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" id="vJ8-Bl-pzW">
+                                    <rect key="frame" x="22" y="322" width="38" height="17"/>
+                                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="center" title="S:" id="CQ7-yO-XfR">
+                                        <font key="font" metaFont="system"/>
+                                        <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                    </textFieldCell>
+                                </textField>
+                                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" id="TVd-eE-tSH">
+                                    <rect key="frame" x="22" y="200" width="38" height="17"/>
+                                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="center" title="I:" id="sqL-Db-eZa">
+                                        <font key="font" metaFont="system"/>
+                                        <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                    </textFieldCell>
+                                </textField>
+                                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" id="lhc-PI-eqe">
+                                    <rect key="frame" x="162" y="322" width="38" height="17"/>
+                                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="mM" id="fKH-8R-c4G">
+                                        <font key="font" metaFont="system"/>
+                                        <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                    </textFieldCell>
+                                </textField>
+                                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" id="YqJ-9s-rPE">
+                                    <rect key="frame" x="162" y="200" width="38" height="17"/>
+                                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="mM" id="TuX-2L-l7F">
+                                        <font key="font" metaFont="system"/>
+                                        <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                    </textFieldCell>
+                                </textField>
+                            </subviews>
+                        </view>
+                    </box>
+                    <customView canDrawConcurrently="YES" focusRingType="none" appearanceType="aqua" id="P5U-2X-fif">
+                        <rect key="frame" x="225" y="-1" width="800" height="697"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                    </customView>
+                </subviews>
+            </view>
+        </window>
+        <numberFormatter formatterBehavior="default10_4" numberStyle="decimal" minimumIntegerDigits="1" maximumIntegerDigits="309" maximumFractionDigits="3" id="RlJ-eL-3t7"/>
+        <numberFormatter formatterBehavior="default10_4" numberStyle="decimal" minimumIntegerDigits="1" maximumIntegerDigits="309" maximumFractionDigits="3" id="Xqc-DD-atL">
+            <real key="minimum" value="5"/>
+            <real key="maximum" value="500"/>
+        </numberFormatter>
+        <numberFormatter formatterBehavior="default10_4" numberStyle="decimal" minimumIntegerDigits="1" maximumIntegerDigits="309" maximumFractionDigits="3" id="zRx-nt-sgV">
+            <real key="minimum" value="4"/>
+            <real key="maximum" value="10"/>
+        </numberFormatter>
+    </objects>
+</document>
